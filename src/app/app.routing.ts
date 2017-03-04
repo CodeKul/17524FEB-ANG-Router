@@ -10,4 +10,4 @@ export const PATHS : Routes = [
     {path : 'car', component : CarComponent}    
 ];
 
-export const AppRouter = RouterModule.forRoot(PATHS,{initialNavigation : true});
+export const AppRouter = RouterModule.forRoot(PATHS);
