@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   onLogin(email: string, password: string) {
     if(email === 'codekul' && password === 'codekul') {
-      this.router.navigate(['']);
+      this.router.navigate(['user','100'],{queryParams : {speed:100}});
     }
   }
 }
