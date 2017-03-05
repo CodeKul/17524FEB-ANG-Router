@@ -7,7 +7,7 @@ import {Routes, RouterModule} from '@angular/router'
 
 export const PATHS : Routes = [
     {path :'', component : DashboardComponent},
-    {path : 'user', component : UserComponent},
+    {path : 'user/:id', component : UserComponent},
     {path : 'car', component : CarComponent},
     {path : 'login', component : LoginComponent},    
 ];
