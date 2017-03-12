@@ -1,3 +1,4 @@
+import { DetailsGuardService } from './car/details-guard.service';
 import { ProfileComponent } from './car/profile.component';
 import { DetailsComponent } from './car/details.component';
 import { LoginComponent } from './login/login.component';
@@ -8,7 +9,7 @@ import { UserComponent } from './user/user.component';
 import { Routes, RouterModule } from '@angular/router'
 
 export const CAR_ROUTES: Routes = [
-    { path: 'details', component: DetailsComponent },
+    { path: 'details', component: DetailsComponent, canActivate : [DetailsGuardService] },
     { path: 'profile', component: ProfileComponent }
 ];
 

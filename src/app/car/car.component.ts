@@ -1,3 +1,4 @@
+import { CheckingService } from './checking.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    check : CheckingService
+  ) { }
 
   ngOnInit() {
   }

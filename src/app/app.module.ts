@@ -1,3 +1,5 @@
+import { CheckingService } from './car/checking.service';
+import { DetailsGuardService } from './car/details-guard.service';
 import { AppRouter } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,7 +30,7 @@ import { ProfileComponent } from './car/profile.component';
     HttpModule,
     AppRouter
   ],
-  providers: [],
+  providers: [DetailsGuardService, CheckingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
