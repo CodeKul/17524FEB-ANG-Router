@@ -1,7 +1,8 @@
 <div class="jumbotron">
   <h1>Its Car</h1>
   <p><a class="btn btn-primary btn-lg" [routerLink]="['']" role="button">Back</a></p>
-
+  <p><a [routerLink]="['details']" routerLinkActive="linkActive">Details</a></p>
+  <p><a [routerLink]="['profile']" routerLinkActive="linkActive">Profile</a></p>
   <div> 
     <router-outlet></router-outlet>
   </div>
